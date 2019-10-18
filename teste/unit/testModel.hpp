@@ -21,7 +21,4 @@ void testingAddFlow(); /*!<testing if the add in the flow vector was done correc
 void testingAddSystem(); /*!<testing if the add in the System vector was done correctly*/
 //! Test all functions of Flow
 void testingModel();
-
-void testHandle();
-
 #endif

@@ -73,17 +73,22 @@ public:
     {
     	pImpl_->setLabel(aux);
     }
+     //!Operator=
+	StockHandle & operator=(StockHandle & s) /*!<operator to make one StockHandle receive the value of another StockHandle*/
+	{
+        Handle<StockBody>::operator=((StockHandle&)s);
+		return *this;
+        
+	}
+    void deleleStockHandle(){
+        this->~StockHandle();
+    }
 private:
     //!Copy constructor
     StockHandle(StockHandle* sh)/*!< Construtor to inicializate one StockHandle equal to another*/
     {
     	*this = *sh;
     }
-    //!Operator=
-	StockHandle & operator=(StockHandle & s) /*!<operator to make one StockHandle receive the value of another StockHandle*/
-	{
-        Handle<StockBody>::operator=((StockHandle&)s);
-		return *this;
-	}
+   
 };
 #endif //!SystemImp_HPP

@@ -1,8 +1,4 @@
 #include "testModel.hpp"
-int numHandleCreated=0;
-int numHandleDeleted=0;
-int numBodyCreated=0;
-int numBodyDeleted=0;
 class Myflow: public FlowHandle{
     public:
         
@@ -105,22 +101,3 @@ void testingModel(){
 	testingAddSystem();
 
 }	
-
-void testHandle(){ 
-	int nhant = numHandleCreated;
-	int nbant = numBodyCreated;
-	int nhDeleted = numHandleDeleted;
-	int nbDeleted = numBodyDeleted;
-	System* x = System::createSystem();
-	Stock* m = x->createStock(10, "Lucas");
-	assert(numHandleCreated == nhant + 2);
-	assert(numBodyCreated == nbant + 2);
-	{
-		Stock* m1 = x->createStock(20, "Gabriel");
-		Stock* m2 = x->createStock(30, "Santos");
-		m1 = m2;
-	}
-	System::deleteSystem(x);
-	cout << "Handle Body is working correctly" << endl;
-
-}

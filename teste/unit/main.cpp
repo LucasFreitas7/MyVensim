@@ -9,6 +9,7 @@
 #include"testFlow.hpp"
 #include"testStock.hpp"
 #include "testModel.hpp"
+#include"testHandle.hpp"
 
 int main(){
     //testFlow();
