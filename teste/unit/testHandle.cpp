@@ -4,6 +4,7 @@ int numHandleCreated=0;
 int numHandleDeleted=0;
 int numBodyCreated=0;
 int numBodyDeleted=0;
+//teste maluco
 void testHandle(){
     int nhant = numHandleCreated;
 	int nbant = numBodyCreated;
