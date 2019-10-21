@@ -19,7 +19,6 @@ void testHandle(){
         x2->deleleStockHandle();
         assert(numHandleDeleted == nhDeleted + 1);
 
-
     }
     cout << "Handle its working ";
 
