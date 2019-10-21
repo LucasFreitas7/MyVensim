@@ -6,7 +6,7 @@
 using namespace std;
 
 /**
-* Virtual class especifica how flow should be implemented
+* Virtual class specifying how flow should be implemented
 */
 
 class Flow: public Model{
